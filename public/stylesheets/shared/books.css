@@ -2,6 +2,7 @@
     --book-cover-width: 200px;
     --book-cover-width-large: 325px;
     --book-cover-aspect-ratio: 0.75;
+    --book-cover-width-medium: 250px;
 }
 
 .book-cover {
@@ -28,10 +29,18 @@
     display: flex;
 }
 
+.book-details-cover {
+    --book-cover-width: var(--book-cover-width-medium);
+}
+
 .book-details-label {
     font-size: 1.2rem;
     font-weight: 500;
     align-self: flex-start;
+}
+
+.book-details-text {
+    font-weight: 200;
 }
 
 .book-details-grid {
@@ -39,28 +48,26 @@
     align-content: flex-start;
     align-items: center;
     grid-gap: 1rem;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     margin-left: 1.5rem;
 }
 
 .book-details-btn-grid {
     display: grid;
-    justify-items: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    grid-template-areas:
-        'edit delete'
-        'author author';
+    justify-items: stretch;
+    align-items: start;
+    align-content: start;
     grid-gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
+.book-details-grid > .book-details-label:last-of-type,
 .book-details-author-btn {
-    grid-area: author;
-    justify-self: stretch;
+    grid-column: span 2;
 }
 
 .book-details-grid p {
     white-space: pre-wrap;
     margin: 0;
+    grid-column: span 2;
 }

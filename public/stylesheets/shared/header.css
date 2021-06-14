@@ -28,7 +28,6 @@
 .header-nav li a {
     text-decoration: none;
     color: var(--color-text-light);
-    font-weight: var(--header-nav-title-font-weight);
     font-weight: var(--header-nav-link-font-weight);
     padding: 1rem;
 }

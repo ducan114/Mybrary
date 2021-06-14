@@ -2,7 +2,7 @@
 <div class="book-details">
     <div>
         <img 
-            class="book-cover" 
+            class="book-cover book-details-cover" 
             src="<%= book.coverImagePath %>" 
         />
         <div class="book-details-btn-grid">
@@ -23,12 +23,12 @@
     </div>
     <div class="book-details-grid">
         <div class="book-details-label">Author:</div>
-        <div class="book-details-label"><%= book.author.name %></div>
+        <div class="book-details-text"><%= book.author.name %></div>
         <div class="book-details-label">Publish Date:</div>
-        <div class="book-details-label"><%= book.publishDate.toDateString() %></div>
+        <div class="book-details-text"><%= book.publishDate.toDateString() %></div>
         <div class="book-details-label">Page Count:</div>
-        <div class="book-details-label"><%= book.pageCount %></div>
-        <div class="book-details-label">Description:</div>
-        <p class="book-details-label"><%= book.description %></p>
+        <div class="book-details-text"><%= book.pageCount %></div>
+        <div class="book-details-label">Description</div>
+        <p class="book-details-text"><%= book.description %></p>
     </div>
 </div>

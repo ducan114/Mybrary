@@ -30,6 +30,10 @@
     background-color: var(--btn-danger-background-color);
 }
 
+form > .btn-danger {
+    width: 100%;
+}
+
 .btn-primary:hover {
     color: var(--btn-primary-text-color-dark);
     background-color: var(--btn-primary-background-color-dark);
@@ -50,4 +54,9 @@
 
 .btn-row > *:first-child {
     margin-left: 0;
+}
+
+.btn-row-center {
+    margin-top: 1rem;
+    justify-content: center;
 }
